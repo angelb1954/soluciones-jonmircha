@@ -75,14 +75,8 @@ código de la condición tiene una sola línea)
 //     7) Programa una función que valide si una palabra o frase dada, es un palíndromo(que se lee igual en un sentido que en otro), pe.mifuncion("Salas") devolverá true.
 
 
-    // function palindromeChecker(str) {
-    //     const newStr = str.replace(/[\W_]/g, "").toLowerCase();
-    //     const strReversed = newStr.split("").reverse().join("");
+     
 
-    //     return newStr === strReversed ? "es palindromo" : "no es palindromo";
-    // }
-
-    // console.log(palindromeChecker("Rapado"));
     // console.log(palindromeChecker("reconocer")); 
     // console.log(palindromeChecker("Atar a la rata")); 
 
@@ -142,10 +136,10 @@ código de la condición tiene una sola línea)
 
             return console.info(`La palabra ${texto} se repite ${contador} veces`);
         }
-
+    
         //textoEnCadena();
         //textoEnCadena("", "mundo");
-        //textoEnCadena("hola mundo adios mundo");
+        textoEnCadena("hola mundo adios mundo");
         //textoEnCadena("hola mundo adios mundo", "mundo");
 
 
@@ -162,9 +156,11 @@ código de la condición tiene una sola línea)
             return (palabra === alReves)
                 ? console.info(`Sí es palíndromo, Palabra original ${palabra}, Palabra al revés ${alReves}`)
                 : console.info(`No es palíndromo, Palabra original ${palabra}, Palabra al revés ${alReves}`);
-        }
 
-        //palindromo();
+        }
+        
+                palindromo("Salas");
+
         //palindromo("hola Mundo");
         //palindromo("SaLas");
 
