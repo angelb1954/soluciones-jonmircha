@@ -80,30 +80,30 @@
 // Soluciones Jon Mircha
 
   /* 12) Programa una función que determine si un número es primo (aquel que solo es divisible por sí mismo y 1) o no, pe. miFuncion(7) devolverá true */
-  const numeroPrimo = (numero = undefined) => {
-    if (numero === undefined) return console.warn("No ingresaste un número");
+  // const numeroPrimo = (numero = undefined) => {
+  //   if (numero === undefined) return console.warn("No ingresaste un número");
 
-    if (typeof numero !== "number") return console.error(`El valor "${numero}" ingresado, NO es un número`);
+  //   if (typeof numero !== "number") return console.error(`El valor "${numero}" ingresado, NO es un número`);
 
-    if (numero === 0) return console.error("El número no puede ser 0");
+  //   if (numero === 0) return console.error("El número no puede ser 0");
 
-    if (numero === 1) return console.error("El número no puede ser 1");
+  //   if (numero === 1) return console.error("El número no puede ser 1");
 
-    if (Math.sign(numero) === -1) return console.error("El número no puede ser negativo");
+  //   if (Math.sign(numero) === -1) return console.error("El número no puede ser negativo");
 
-    let divisible = false;
+  //   let divisible = false;
 
-    for (let i = 2; i < numero; i++) {
-      if ((numero % i) === 0) {
-        divisible = true;
-        break;
-      }
-    }
+  //   for (let i = 2; i < numero; i++) {
+  //     if ((numero % i) === 0) {
+  //       divisible = true;
+  //       break;
+  //     }
+  //   }
 
-    return (divisible)
-      ? console.log(`El número ${numero}, NO es primo`)
-      : console.log(`El número ${numero}, SÍ es primo`);
-  }
+  //   return (divisible)
+  //     ? console.log(`El número ${numero}, NO es primo`)
+  //     : console.log(`El número ${numero}, SÍ es primo`);
+  // }
 
   //numeroPrimo();
   //numeroPrimo("320");
@@ -119,18 +119,18 @@
 
 
   /* 13) Programa una función que determine si un número es par o impar, pe. miFuncion(29) devolverá Impar */
-  const numeroParImpar = (numero = undefined) => {
-    if (numero === undefined) return console.warn("No ingresaste un número");
+  // const numeroParImpar = (numero = undefined) => {
+  //   if (numero === undefined) return console.warn("No ingresaste un número");
 
-    if (typeof numero !== "number") return console.error(`El valor "${numero}" ingresado, NO es un número`);
+  //   if (typeof numero !== "number") return console.error(`El valor "${numero}" ingresado, NO es un número`);
 
-    return ((numero % 2) === 0)
-      ? console.info(`El número ${numero} es Par`)
-      : console.info(`El número ${numero} es Impar`)
-  }
+  //   return ((numero % 2) === 0)
+  //     ? console.info(`El número ${numero} es Par`)
+  //     : console.info(`El número ${numero} es Impar`)
+  // }
 
   //numeroParImpar();
-  numeroParImpar("23");
+  // numeroParImpar("23");
   
   //numeroParImpar(-398);
   //numeroParImpar(19);
@@ -162,17 +162,17 @@
     console.info("wiiii funciono no tendré que volver a grabar este video por cosas que se e ocurren en tiempo real");
   }
 
-    //convertirGrados();
-    //convertirGrados("2");
+    convertirGrados();
+    convertirGrados("2");
     //convertirGrados(2);
     //convertirGrados(2, true);
-    //convertirGrados(2, "Hola");
-    //convertirGrados(2, "E");
-    //convertirGrados(0, "C");
+    convertirGrados(2, "Hola");
+    convertirGrados(2, "E");
+    convertirGrados(0, "C");
     //convertirGrados(100, "C");
     convertirGrados(32, "F");
 
-    //convertirGrados(100, "F");
+    convertirGrados(100, "F");
 
 
 
