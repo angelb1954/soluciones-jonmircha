@@ -55,21 +55,22 @@
 
   // 16) Programa una función que devuelva el monto final después de aplicar un descuento a una cantidad dada, pe.miFuncion(1000, 20) devolverá 800.
 
-// const montoFinal = (importe= undefined, descuento= undefined)=>{
+const montoFinal = (importe= undefined, descuento= undefined)=>{
 
-// if (typeof importe!== "number") console.warn ("El importe introducido no es un numero");
+if (typeof importe!== "number") console.warn ("El importe introducido no es un numero");
 
-// if (typeof descuento!== "number") console.warn ("El importe introducido no es un numero");
+if (typeof descuento!== "number") console.warn ("El importe introducido no es un numero");
 
-// if (descuento >= 100) console.warn("El descuento introducido no es superior al importe de la compra");
+if (descuento >= 100) console.warn("El descuento introducido no es superior al importe de la compra");
 
-// else return console.info(`El importe neto una vez aplicado el ${descuento} de descuento asciende a ${(importe)*(100-descuento)/100}`);
+else return console.info(`El importe neto una vez aplicado el ${descuento} de descuento asciende a ${(importe)*(100-descuento)/100}`);
 
   
 
-// }
+}
 
-//  montoFinal(10000, 20); 
+  montoFinal(10000, 20); 
+
 
 
 
@@ -81,26 +82,26 @@
 
   // 17) Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy, pe.miFuncion(new Date(1984, 4, 23)) devolverá 35 años(en 2020).
 
-  function diferenciaAgnios(fecha1, fecha2) {
-      if (!(fecha1 instanceof Date) || !(fecha2 instanceof Date)) {
-        throw TypeError('Ambos argumentos deben ser objetos de tipo fecha (Date)');
-      }
+  // function diferenciaAgnios(fecha1, fecha2) {
+  //     if (!(fecha1 instanceof Date) || !(fecha2 instanceof Date)) {
+  //       throw TypeError('Ambos argumentos deben ser objetos de tipo fecha (Date)');
+  //     }
 
-      let diferencia = (fecha2.getTime() - fecha1.getTime()) / 1000;
+  //     let diferencia = (fecha2.getTime() - fecha1.getTime()) / 1000;
 
-      diferencia /= (60 * 60 * 24);
-      diferencia /= 365.25;
+  //     diferencia /= (60 * 60 * 24);
+  //     diferencia /= 365.25;
 
-      return Math.abs(Math.round(diferencia));
-    }
+  //     return Math.abs(Math.round(diferencia));
+  //   }
 
-    console.log(new Date());
+  //   console.log(new Date());
 
       
-    console.log(diferenciaAgnios(new Date(), new Date(2043, 0, 1)));
+  //   console.log(diferenciaAgnios(new Date(), new Date(2043, 0, 1)));
     
         
-     console.log(diferenciaAgnios(42, new Date(2043, 0, 1)));    
+  //    console.log(diferenciaAgnios(42, new Date(2043, 0, 1)));    
 
 //Solución encontrada en Internet(John Ortiz Ordoñez. Gracias)
 
@@ -176,29 +177,29 @@
   /* 17) Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy, pe. miFuncion(new Date(1984,4,23)) devolverá 35 años (en 2020) */
 
 
-  // const calcularAnios = (fecha = undefined) => {
-  //   if (fecha === undefined) return console.warn("No ingresaste la fecha");
+  const calcularAnios = (fecha = undefined) => {
+    if (fecha === undefined) return console.warn("No ingresaste la fecha");
 
-  //   if (!(fecha instanceof Date)) return console.error("El valor que ingresaste no es una fecha válida");
+    if (!(fecha instanceof Date)) return console.error("El valor que ingresaste no es una fecha válida");
 
-  //   let hoyMenosFecha = new Date().getTime() - fecha.getTime(),
-  //     aniosEnMS = 1000 * 60 * 60 * 24 * 365,
-  //     aniosHumanos = Math.floor(hoyMenosFecha / aniosEnMS);
+    let hoyMenosFecha = new Date().getTime() - fecha.getTime(),
+      aniosEnMS = 1000 * 60 * 60 * 24 * 365,
+      aniosHumanos = Math.floor(hoyMenosFecha / aniosEnMS);
 
-  //   return (Math.sign(aniosHumanos) === -1)
-  //     ? console.info(`Faltan ${Math.abs(aniosHumanos)} años para el ${fecha.getFullYear()}.`)
-  //     : (Math.sign(aniosHumanos) === 1)
-  //       ? console.info(`Han pasado ${aniosHumanos} años, desde ${fecha.getFullYear()}.`)
-  //       : console.info(`Estamos en el año actual ${fecha.getFullYear()}.`)
-  // }
+    return (Math.sign(aniosHumanos) === -1)
+      ? console.info(`Faltan ${Math.abs(aniosHumanos)} años para el ${fecha.getFullYear()}.`)
+      : (Math.sign(aniosHumanos) === 1)
+        ? console.info(`Han pasado ${aniosHumanos} años, desde ${fecha.getFullYear()}.`)
+        : console.info(`Estamos en el año actual ${fecha.getFullYear()}.`)
+  }
 
-    //calcularAnios();
-    //calcularAnios({});
-    //calcularAnios(false);
-    //calcularAnios(new Date());
-    //calcularAnios(new Date(1984, 4, 23));
-    //calcularAnios(new Date(1884, 4, 23));
-    //calcularAnios(new Date(2084, 4, 23));
+    calcularAnios();
+    calcularAnios({});
+    calcularAnios(false);
+    calcularAnios(new Date());
+    calcularAnios(new Date(1984, 4, 23));
+    calcularAnios(new Date(1884, 4, 23));
+    calcularAnios(new Date(2084, 4, 23));
 
 
 
