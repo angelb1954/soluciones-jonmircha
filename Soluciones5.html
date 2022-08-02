@@ -16,28 +16,30 @@
 
   // 15) Programa una función para convertir números de base binaria a decimal y viceversa, pe.miFuncion(100, 2) devolverá 4 base 10.
 
-  // const convertirNumeros = (numeros = undefined, unidad = undefined) => {
-  //     if (numeros === undefined) return console.warn("No ingresaste cifra a convertir");
+  const convertirNumeros = (numeros = undefined, unidad = undefined) => {
+      if (numeros === undefined) return console.warn("No ingresaste cifra a convertir");
 
-  //     if (typeof numeros !== "number") return console.error(`El valor "${numeros}" ingresado, NO es un número`);
+      if (typeof numeros !== "number") return console.error(`El valor "${numeros}" ingresado, NO es un número`);
 
-  //     if (unidad === undefined) return console.warn("No ingresaste el tipo de numero a convertir");
+      if (unidad === undefined) return console.warn("No ingresaste el tipo de numero a convertir");
 
-  //     if (typeof unidad !== "string") return console.error(`El valor "${unidad}" ingresado, NO es una cadena de texto`);
+      if (typeof unidad !== "string") return console.error(`El valor "${unidad}" ingresado, NO es una cadena de texto`);
 
-  //     if (unidad.length !== 3 || !/(B02|B10)/.test(unidad)) return console.warn("Valor de unidad no reconocido");
+      if (unidad.length !== 3 || !/(B02|B10)/.test(unidad)) return console.warn("Valor de unidad no reconocido");
 
-  //     if (unidad === String && numeros >=1) return console.warn("Valor de unidad no reconocido");
+      if (unidad === String && numeros >=1) return console.warn("Valor de unidad no reconocido");
 
-  //   if (unidad === "B10") {
-  //     return console.info(`${numeros} en base binaria = ${parseInt(numeros, 2)} en base decimal`);
-  //   } else if (unidad === "B02") {
-  //     return console.info(`${numeros} en base decimal = ${(numeros.toString(2)) } en base binaria`);
-  //   } else {
-  //     return console.error("El tipo de numeros a convertir NO es válido");
-  //   }
-  // }
-  //   convertirNumeros(100110, "B10");
+    if (unidad === "B10") {
+      return console.info(`${numeros} en base binaria = ${parseInt(numeros, 2)} en base decimal`);
+    } else if (unidad === "B02") {
+      return console.info(`${numeros} en base decimal = ${(numeros.toString(2)) } en base binaria`);
+    } else {
+      return console.error("El tipo de numeros a convertir NO es válido");
+    }
+  }
+    convertirNumeros(100110, "B10");
+
+
 
   //   convertirNumeros("2");
   //   convertirNumeros(2);
@@ -63,7 +65,7 @@ if (typeof descuento!== "number") console.warn ("El importe introducido no es un
 
 if (descuento >= 100) console.warn("El descuento introducido no es superior al importe de la compra");
 
-else return console.info(`El importe neto una vez aplicado el ${descuento} de descuento asciende a ${(importe)*(100-descuento)/100}`);
+else console.info(`El importe neto una vez aplicado el ${descuento} de descuento asciende a ${(importe)*(100-descuento)/100}`);
 
   
 
