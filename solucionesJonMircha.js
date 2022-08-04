@@ -449,17 +449,17 @@
 
 
     /* 19) Programa una función que valide que un texto sea un nombre válido, pe. miFuncion("Jonathan MirCha") devolverá verdadero */
-    const validarNombre = (nombre = "") => {
-      if (!nombre) return console.warn("No ingresaste un nombre");
+    // const validarNombre = (nombre = "") => {
+    //   if (!nombre) return console.warn("No ingresaste un nombre");
 
-      if (typeof nombre !== "string") return console.error(`El valor "${nombre}" ingresado, NO es una cadena de texto`);
+    //   if (typeof nombre !== "string") return console.error(`El valor "${nombre}" ingresado, NO es una cadena de texto`);
 
-      let expReg = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/g.test(nombre);
+    //   let expReg = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/g.test(nombre);
 
-      return (expReg)
-        ? console.info(`"${nombre}", es un nombre válido`)
-        : console.warn(`"${nombre}", NO es un nombre válido`);
-    }
+    //   return (expReg)
+    //     ? console.info(`"${nombre}", es un nombre válido`)
+    //     : console.warn(`"${nombre}", NO es un nombre válido`);
+    // }
 
     //validarNombre();
     //validarNombre(3);
@@ -567,7 +567,7 @@
       return console.info(`Arreglo original: ${arr}\nValor mayor: ${Math.max(...arr)},\nValor menor: ${Math.min(...arr)}`);
     }
 
-    //arrayMinMax();
+    arrayMinMax();
     //arrayMinMax(false);
     //arrayMinMax([]);
     //arrayMinMax([2, 3, true]);
@@ -578,28 +578,29 @@
 
 
     /* 23) Programa una función que dado un array de números devuelva un objeto con 2 arreglos en el primero almacena los números pares y en el segundo los impares, pe. miFuncion([1,2,3,4,5,6,7,8,9,0]) devolverá {pares: [2,4,6,8,0], impares: [1,3,5,7,9]} */
-    const separarParesImpares = (arr = undefined) => {
-      if (arr === undefined) return console.warn("No ingresaste un arreglo de números");
 
-      if (!(arr instanceof Array)) return console.error("El valor que ingresaste no es un arreglo");
+    // const separarParesImpares = (arr = undefined) => {
+    //   if (arr === undefined) return console.warn("No ingresaste un arreglo de números");
 
-      if (arr.length === 0) return console.error("El arreglo esta vacío");
+    //   if (!(arr instanceof Array)) return console.error("El valor que ingresaste no es un arreglo");
 
-      for (let num of arr) {
-        if (typeof num !== "number") return console.error(`El valor "${num}" ingresado, NO es un número`);
-      }
+    //   if (arr.length === 0) return console.error("El arreglo esta vacío");
 
-      return console.info({
-        pares: arr.filter(num => num % 2 === 0),
-        impares: arr.filter(num => num % 2 === 1)
-      })
-    }
+    //   for (let num of arr) {
+    //     if (typeof num !== "number") return console.error(`El valor "${num}" ingresado, NO es un número`);
+    //   }
 
-    //separarParesImpares();
-    //separarParesImpares("hola");
-    //separarParesImpares([]);
-    //separarParesImpares([2, 4, "j"]);
-    //separarParesImpares([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
+    //   return console.info({
+    //     pares: arr.filter(num => num % 2 === 0),
+    //     impares: arr.filter(num => num % 2 === 1)
+    //   })
+    // }
+
+    // separarParesImpares();
+    // separarParesImpares("hola");
+    // separarParesImpares([]);
+    // separarParesImpares([2, 4, "j"]);
+    // separarParesImpares([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
 
 
 
