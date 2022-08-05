@@ -629,7 +629,7 @@
     //ordenarArreglo("Hola");
     //ordenarArreglo([]);
     //ordenarArreglo([3, {}]);
-    //ordenarArreglo([7, 5, 7, 8, 6]);
+    ordenarArreglo([7, 5, 7, 8, 6]);
 
 
 
