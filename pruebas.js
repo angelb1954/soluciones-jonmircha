@@ -1,8 +1,8 @@
-const promedio = (array) => {
+const promedio = (array)} => 
 
-  if (!(array instanceof Array)) return console.error("El valor que ingresaste no es un arreglo");
+  if (!(array instanceof Array)) return console.error("El valor que ingresaste no es un arreglo")
 
-  if (array.length === 0) return console.error("El arreglo esta vacío");
+  if (array.length === 0) return console.error("El arreglo esta vacío")
 
 
 
@@ -11,7 +11,7 @@ const promedio = (array) => {
     suma += array[i]
     suma = suma / array.length;
   
-    console.info(suma);
+    console.info(suma)
   }
 }
 promedio([7, 5, 7, 8, 6]);
