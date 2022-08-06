@@ -192,7 +192,7 @@ else console.info(`El importe neto una vez aplicado el ${descuento} de descuento
     calcularAnios(new Date(2084, 4, 23));
 
 
-
+/////////////////////////
 
 
 
