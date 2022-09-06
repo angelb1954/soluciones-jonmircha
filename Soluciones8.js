@@ -145,8 +145,8 @@ duplicados("a,b,c");
     //   )
     // }
 
-    // promedio();
-    // promedio({});
-    // promedio([]);
-    // promedio([2, true]);
-    // promedio([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
+    promedio();
+    promedio({});
+    promedio([]);
+    promedio([2, true]);
+    promedio([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
